@@ -7,15 +7,28 @@ form.addEventListener("submit" , function(e){
     const literFuel = parseInt(document.querySelector("#literFuel").value)
     const finalvalue = document.querySelector("#finalvalue")
 
+    const dataTitleDistance = document.querySelector("#data-title-distance")
+    const dataTitleVhavrerage = document.querySelector("#data-title-vhavrerage")
+    const dataTitleLiterFuel = document.querySelector("#data-title-literFuel")
+
     if(distanceKm === ""  ||  distanceKm < 0  ||  isNaN(distanceKm)){
-        finalvalue.innerHTML = `Please give a valid total distance ${distanceKm}`
+        dataTitleDistance.innerHTML = `Please give a valid total distance ${distanceKm}`
     } else if(vahicalavrage === ""  ||  vahicalavrage < 0  ||  isNaN(vahicalavrage)){
-        finalvalue.innerHTML = `Please give a valid total distance ${vahicalavrage}`
+        dataTitleVhavrerage.innerHTML = `Please give a valid total distance ${vahicalavrage}`
     } else if(literFuel === ""  ||  literFuel < 0  ||  isNaN(literFuel)){
-        finalvalue.innerHTML = `Please give a valid price  ${vahicalavrage}`
+        dataTitleLiterFuel.innerHTML = `Please give a valid price ${vahicalavrage}`
     }else{
         const fuelavrg = ((distanceKm / vahicalavrage) * literFuel).toFixed(2)
-        finalvalue.innerHTML = `<span>${fuelavrg}</span>`
+        finalvalue.innerHTML = `<span> ₹${fuelavrg}</span>`
     }
+    // const fuelavrg = ((distanceKm / vahicalavrage) * literFuel).toFixed(2)
+    // finalvalue.innerHTML = `<span> ₹${fuelavrg}</span>`
+
+
+   
+
+    dataTitleDistance.innerHTML = `<span>${distanceKm}</span>`
+    dataTitleVhavrerage.innerHTML = `<span>${vahicalavrage}</span>`
+    dataTitleLiterFuel.innerHTML = `<span>${literFuel}</span>`
 })
 

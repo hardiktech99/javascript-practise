@@ -2,23 +2,51 @@
     background-color: #eee;
     padding:24px;
 } */
-.canvas{
-    height: 100vh;
-}
+
 .canvas .canvas-wrap .cal-wrap .title{
     border-bottom: 1px solid black;
 }
 .canvas .canvas-wrap .cal-wrap{
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
-.canvas .canvas-wrap .cal-wrap form{
-    display: grid;
-    gap: 8px;
+.canvas .canvas-wrap .cal-wrap form {
+    width: 100%;
+    margin-right: 32px;
+}
+.canvas .canvas-wrap .cal-wrap form .input-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8px 0
 }
 .canvas .canvas-wrap .cal-wrap form label{
     font-size: 14px;
+    margin-bottom: 6px;
 }
 .canvas .canvas-wrap .cal-wrap form input{
     display: flex;
+   
+}
+.canvas .canvas-wrap .cal-wrap .data{
+    background-color: #eee;
     width: 100%;
+    padding: 16px 32px;
+}
+.canvas .canvas-wrap .cal-wrap .data .data-wrap{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.canvas .canvas-wrap .cal-wrap .data .data-wrap:last-child{
+    border: inherit;
+    font-size: 20px;
+    color: black;
+
+}
+.canvas .canvas-wrap .cal-wrap .data .data-wrap:last-child > span:last-child{
+    font-weight: bold;
 }

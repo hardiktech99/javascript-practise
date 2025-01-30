@@ -27,23 +27,42 @@
             </div>
             <div class="cal-wrap">
                 <form action="">
-                    <div>
-                        <label for="distance">Distance Travelled in KM</label>
+                    <div class="input-wrap">
+                        <label for="distance">Distance Travel in KM</label>
                         <input id="distance" type="number" placeholder="Enter kilometer">
                     </div>
-                    <div>
-                        <label for="totalFuel">Vehicle average</label>
+                    <div class="input-wrap">
+                        <label for="vhavrerage">Vehicle average</label>
                         <input id="vhavrerage"  type="number" placeholder="Enter average">
                     </div>
-                    <div>
+                    <div class="input-wrap">
                         <label for="literFuel">Fuel Cost per liter</label>
                         <input id="literFuel" type="number" placeholder="Enter fuel price per liter">
                     </div>
-                    <div>
+                    <div class="input-wrap">
                         <input type="submit" value="Click to calculate">
                     </div>
-                    <div id="finalvalue"></div>
+                    <!-- <div id="finalvalue"></div> -->
                 </form>
+                <div class="data">
+                    <h3>Your vehicle fuel cost</h3>
+                    <div class="data-wrap">
+                        <span class="data-title">Distance Travel in KM</span>
+                        <span id="data-title-distance">0</span>
+                    </div>
+                    <div class="data-wrap">
+                        <span class="data-title">Vehicle average</span>
+                        <span id="data-title-vhavrerage">0</span>
+                    </div>
+                    <div class="data-wrap">
+                        <span class="data-title">Fuel Cost per liter</span>
+                        <span id="data-title-literFuel">0</span>
+                    </div>
+                    <div class="data-wrap">
+                        <span class="data-title">Total Fuel Price</span>
+                        <span id="finalvalue">0</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
