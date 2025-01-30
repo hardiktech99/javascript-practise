@@ -43,3 +43,51 @@ ul{
 ul li {
     padding-bottom: 8px;
 }
+
+p,a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+input{
+    padding: 8px;
+}
+.continer{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+/* header/---------------------------------- */
+.header {
+    background-color: darkorchid;
+}
+
+.header .header-wrap .logo{
+    color: antiquewhite;
+    font-size: 24px;
+}
+
+/* footer------------------------------------ */
+.footer{
+    border-top: 1px solid black;
+}
+.footer .footer-wrap .other-links li{
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.footer .footer-wrap .other-links li:hover{
+    background-color: #eee;
+}

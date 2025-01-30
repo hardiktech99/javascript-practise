@@ -3,14 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mileage Calculator</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="custom.css">
-    <Script src="script.js"></Script>
 </head>
 <body>
+<header>
+    <div class="header">
+        <div class="continer">
+            <div class="header-wrap d-flex">
+                <span class="logo">✨ J$ pяёcтї$ё</span>
+            </div>
+        </div>
+    </div>
+</header>
 
-    
+<div class="canvas">
+    <div class="continer">
+        <div class="canvas-wrap">
+            <div class="title">
+                <h1>🚗 Mileage Calculator 🚗</h1>
+                <p>An online fuel cost calculator estimates trip expenses based on vehicle mileage, distance, fuel type, and time period.</p>
+            </div>
+            <div class="cal-wrap">
+                <form action="">
+                    <div>
+                        <label for="distance">Distance Travelled in KM</label>
+                        <input id="distance" type="number" placeholder="Enter kilometer">
+                    </div>
+                    <div>
+                        <label for="totalFuel">Vehicle average</label>
+                        <input id="vhavrerage"  type="number" placeholder="Enter average">
+                    </div>
+                    <div>
+                        <label for="literFuel">Fuel Cost per liter</label>
+                        <input id="literFuel" type="number" placeholder="Enter fuel price per liter">
+                    </div>
+                    <div>
+                        <input type="submit" value="Click to calculate">
+                    </div>
+                    <div id="finalvalue"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+<footer>
+    <div class="footer">
+        <div class="continer">
+            <div class="footer-wrap d-flex">
+                <p class="copy-text">©️ 2025-26 Hardik  |  All Rights Reserved.</p>
+                <ul class="other-links d-flex">
+                    <li><a href="">🎨 Dribbble</a></li>
+                    <li><a href="">👨🏻‍💻 Github</a></li>
+                    <li><a href="">🌎 Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script> 
 </body>
 </html>
