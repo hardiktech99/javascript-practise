@@ -23,7 +23,29 @@
         <div class="canvas-wrap">
             <div class="title">
                 <h1>🚗 Mileage Calculator 🚗</h1>
-                <p>An online fuel cost calculator estimates trip expenses based on vehicle mileage, distance, fuel type, and time period.</p>
+                <p>Using a fuel cost calculator is simple and helps you estimate the total fuel expenses for a trip or regular commute. Here’s how you can use it effectively:</p>
+                <div class="cal-details">
+                    <h3>Steps to Use a Fuel Cost Calculator:</h3>
+                    <ol>
+                        <li><strong>Enter the Distance : </strong> Input the total distance of your trip (in miles or kilometers).</li>
+                        <li><strong>Enter Fuel Efficiency :</strong>  Provide your vehicle’s fuel consumption rate (e.g., miles per gallon or kilometers per liter).</li>
+                        <li><strong>Enter Fuel Price :</strong>  Input the current price of fuel per gallon or liter.</li>
+                        <li><strong> Calculate :</strong> Click on the "Calculate" button, and the tool will compute the estimated fuel cost for your trip.</li>
+                    </ol>
+                    <!-- <h3>Example Calculation:</h3>
+                    <ul>
+                        <li>Distance: <strong>500 km</strong></li>
+                        <li>Fuel Efficiency: <strong>20 km/l</strong></li>
+                        <li>Fuel Price:  <strong>₹95 per liter</strong></li>
+                        <li><strong>Total Fuel Cost:</strong>(500 ÷ 15) × 95= <strong>₹2375</strong></li>
+                    </ul> -->
+                    <h3>Benefits of Using a Fuel Cost Calculator:</h3>
+                    <ul>
+                        <li>✔ Helps in budgeting travel expenses</li>
+                        <li>✔ Compares costs for different routes</li>
+                        <li>✔ Useful for long road trips and daily commuting</strong></li>
+                    </ul>
+                </div>
             </div>
             <div class="cal-wrap">
                 <form action="">
@@ -40,30 +62,33 @@
                         <input id="literFuel" type="number" placeholder="Enter fuel price per liter">
                     </div>
                     <div class="input-wrap">
-                        <input type="submit" value="Click to calculate">
+                        <input class="input-btn" type="submit" value="Click to calculate">
                     </div>
                     <!-- <div id="finalvalue"></div> -->
                 </form>
                 <div class="data">
-                    <h3>Your vehicle fuel cost</h3>
-                    <div class="data-wrap">
-                        <span class="data-title">Distance Travel in KM</span>
-                        <span id="data-title-distance">0</span>
-                    </div>
-                    <div class="data-wrap">
-                        <span class="data-title">Vehicle average</span>
-                        <span id="data-title-vhavrerage">0</span>
-                    </div>
-                    <div class="data-wrap">
-                        <span class="data-title">Fuel Cost per liter</span>
-                        <span id="data-title-literFuel">0</span>
-                    </div>
-                    <div class="data-wrap">
-                        <span class="data-title">Total Fuel Price</span>
-                        <span id="finalvalue">0</span>
+                    <div class="data-block">
+                        <h5>⛽ Your vehicle fuel cost</h5>
+                        <div class="data-wrap">
+                            <span class="data-title">Distance Travel in KM</span>
+                            <span id="data-title-distance">0</span>
+                        </div>
+                        <div class="data-wrap">
+                            <span class="data-title">Vehicle average</span>
+                            <span id="data-title-vhavrerage">0</span>
+                        </div>
+                        <div class="data-wrap">
+                            <span class="data-title">Fuel Cost per liter</span>
+                            <span id="data-title-literFuel">0</span>
+                        </div>
+                        <div class="data-wrap">
+                            <span class="data-title">Total Fuel Price</span>
+                            <span id="finalvalue">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="cal-details"></div> -->
         </div>
     </div>
 </div>
